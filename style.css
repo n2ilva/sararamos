@@ -112,3 +112,9 @@ div.videos {
     gap: 20px;
     justify-content: center;
 }
+div.rodape {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+}
