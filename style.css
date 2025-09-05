@@ -21,6 +21,7 @@ body{
     align-items: center;
     gap: 30px;
     padding: 30px;
+    list-style-type: none;
 }
 .menu ul li a{
     display: inline-block;
