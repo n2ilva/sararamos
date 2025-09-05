@@ -110,3 +110,26 @@ img.rodape {
     width: 32px;
     height: auto;
 }
+.botao-download {
+    display: flex;
+    flex-direction: row;
+    background-color: #22BABB;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-download:hover {
+    background-color: #348888;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: center;
+}
