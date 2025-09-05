@@ -5,131 +5,99 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #f0f0f0;
+    background-color: #f4e2de88;
     color: #333;
-    padding: 20px;
 }
-header{
-    background-color: #22BABB;
-    color: white;
-    padding: 20px 0;
-    text-align: left;
-    margin-bottom: 25px;
+.menu{
+    padding: 0px;
+    background-color: #007172;
+    color: white;  
+    
 }
-.menu a{
-    color: white;
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+.menu ul li a{
+    display: inline-block;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+    transition: background-color 0.3s;
 }
-.menu a:hover{
-    text-decoration: underline;
+.menu ul li a:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    background-color: #025259;
+}
+main{
+    padding: 20px;
+    text-align: center;
 }
 footer{
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #22BABB;
+    background-color: #007172;
     color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.rodape ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+}
+.rodape ul li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+.rodape ul li a img{
+    vertical-align: middle;
+}
+.rodape ul li a img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.rodape ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.rodape ul li a:hover{
+    text-decoration: underline;
+}
+.rodape img{
+    vertical-align: middle;
+}
+.rodape img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 h1{
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 h2{
-    margin: 15px 0;
+    margin-bottom: 15px;
 }
 p{
-    margin: 10px 0;
-}
-img{
-    height: 300px;
-    width: auto;
-    display: flexbox;
-    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 a{
+    color: #007172;
     text-decoration: none;
-    color: #22BABB;
 }
 a:hover{
     text-decoration: underline;
-}
-.menu{
-    margin-top: 10px;
-}
-.menu details{
-    display: inline-block;
-    position: relative;
-}
-.menu details summary{
-    list-style: none;
-    cursor: pointer;
-}
-.menu details[open] summary::after{
-    content: "";
-    position: absolute;
-    right: -15px;
-}
-.menu details summary::after{
-    content: "▼";
-    position: absolute;
-    right: -15px;
-}
-.menu .submenu{
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: none;
-    z-index: 1000;
-}
-.menu details[open] .submenu{
-    display: block;
-}
-.menu .submenu a{
-    color: #333;
-    padding: 5px 0;
-    display: block;
-}
-.menu .submenu a:hover{
-    background-color: #f0f0f0;
-}
-div.videos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-div.rodape {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    align-items: center;
-}
-img.rodape {
-    width: 32px;
-    height: auto;
-}
-.botao-download {
-    display: flex;
-    flex-direction: row;
-    background-color: #22BABB;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.botao-download:hover {
-    background-color: #348888;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    text-align: center;
 }
