@@ -1,252 +1,99 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(to bottom, #f2189e13, #e29bc7);
-}
-body {
-    background-color: ;
-}
-
+* { box-sizing: border-box; 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  scroll-behavior: smooth;}
+body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
 .menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #F2189F, #e993c8);
+    background: #DF6283;
+    padding: 10px 20px;
 }
 .menu a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
-    line-height: 2.5;
-    font-size: 16px;
+    border-radius: 5px;
+    
 }
 .menu a:hover {
-    background-color: #ffe4199d;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    background: #4ED7FF;
+    color: black;
+    transition: 0.3s;
 }
 .menu h1 {
-    color: white;
-    font-size: 26px;
     margin: 0;
+    color: #ffffff;
+    font-size: 24px;
 }
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-    gap: 20;
-    color: #333;
-}
-.conteudo_atv{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-    padding: 20px;
-    gap: 20px;
-}
-.historia_inf {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 30px;
-    gap: 20;
-    color: #333;
-}
-.historia_inf strong{
-    color: #333;
-    font-size: 18px;
-}
-.historia_inf ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.conteudo_img {
+.menu ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px;;
-    gap: 20px;
-    
-}    
-.conteudo_img p {
-    width: 100%;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
 }
-div.imagem1 , div.imagem2, div.imagem3, div.imagem4, div.imagem5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    border: 1px solid #FFE419;
+.dropdown {
+    position: relative;
 }
-.botao {
-    background-color: #FFE419;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
     color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 12px 16px;
     text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s;
+    display: block;
+    margin: auto;
 }
-.botao:hover {
-    background-color: #A4CC14;
-}
-.conteudo_vid {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 30px;
-    gap: 20;
-    color: #333;
-}
-.conteudo_video p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-}
-.videos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-.videos iframe {
-    border: 1px solid #FFE419;
+.dropdown:hover .dropdown-content {     
+    display: block; 
+    background: #d194a5;
     border-radius: 5px;
+    transition: 0.3s;
 }
-.jogos_edu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 30px;
-    gap: 20;
-    color: #333;
-}
-.jogos_edu strong{
-    color: #333;
-    font-size: 18px;
-}
-.jogos_edu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.conteudo_contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.corpo {
     padding: 20px;
-}
-label {
-    font-weight: bold;
-}
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-textarea {
-    resize: vertical;
-    height: 100px;
-}
-input[type="submit"] {
-    background-color: #BCD693;
-    color: white;
-    box-shadow: 3px 4px 3px rgb(115, 131, 90);
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
+    background: white;
+    margin: 20px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100vh;
 }
-input[type="submit"]:hover {
-    background-color: #8FA24E;
+.corpo_titulo {
+    color: #DF6283;
+    margin-bottom: 10px;
+    font-size: 24px;
+    border-bottom: 2px solid #DF6283;
+    padding-bottom: 20px;
+
 }
-input[type="reset"] {
-    background-color: #D91657;
-    color: white;
-    border: none;
-    box-shadow: 3px 4px 3px #7a0c31;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-input[type="reset"]:hover {
-    background-color: #8FA24E;
-}
-.botoes {
-    display: flex;
-    flex-direction: row;
-    padding: 10x;
-    gap: 68%;
-    
-}
-.linha{
-    color: #A4CC14;
+.corpo_p {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: fit-content;
+    color: #555;
 }
 .rodape {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    background: #DF6283;
     color: white;
-    
-    
+    padding: auto;
 }
-.rodape div{
+.rodape_div {
     display: flex;
-    justify-content: center;
-    padding: 5px 0;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
     gap: 10px;
-    
-}
-.rodape p {
-    margin: 0;
-    font-size: 14px;
-    
-}
-.rodape a:hover {
-    opacity: 0.7;
-    transition: opacity 0.3s;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: max-content;
-  background: linear-gradient(to bottom, #e993c8, #F2189F);
 }
