@@ -41,22 +41,18 @@
 
                 <label for="mensagem">Mensagem:</label><br>
                 <textarea id="mensagem" name="mensagem" rows="4" cols="50" required class="input"></textarea><br><br>
-                <div class="botoes">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Apagar">
-                </div>
                 <script>
                     function enviarWhatsApp() {
                         var nome = document.getElementById('nome').value;
                         var mensagem = document.getElementById('mensagem').value;
-                        var numero = 'SEUNUMEROAQUI'; // Exemplo: 5511999999999
+                        var numero = '55999633100'; // Exemplo: 5511999999999
 
                         var texto = encodeURIComponent('Nome: ' + nome + '\\nMensagem: ' + mensagem);
                         var url = 'https://wa.me/' + numero + '?text=' + texto;
                         window.open(url, '_blank');
                     }
                 </script>
-                <button type="button" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
+                <button class="botao" type="button" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
             </form>
         </section>
     </main>
