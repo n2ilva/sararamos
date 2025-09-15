@@ -25,11 +25,9 @@ body {
     align-items: center;
     background: #DF6283;
     padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 10000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .menu .titulo {
@@ -158,6 +156,7 @@ main {
     margin-top: 40px;
     text-align: center;
 }
+
 .imagens_colorir p {
     margin-bottom: 20px;
     padding: 20px;
@@ -171,6 +170,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
 .imagens_colorir iframe {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -226,6 +226,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
 .conteudo_videos .videos {
     display: flex;
     flex-wrap: wrap;
@@ -233,6 +234,7 @@ main {
     gap: 20px;
     margin-top: 20px;
 }
+
 .conteudo_videos .videos iframe {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -241,6 +243,7 @@ main {
     width: 300px;
     height: 200px;
 }
+
 .conteudo_videos .videos iframe:hover {
     transform: scale(1.05);
     transition: 0.3s;
@@ -298,25 +301,18 @@ main {
 
 .rodape {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     background: #DF6283;
+    padding: 20px;
     color: white;
-    padding: 10px 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 9999;
-}
-
-.rodape_conteudo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    gap: 20px;
+    
 }
 
 .inscricao {
@@ -344,4 +340,9 @@ main {
     background: goldenrod;
     color: white;
     transition: 0.3s;
+}
+
+.contato {
+    text-align: center;
+    font-size: 10px;
 }
