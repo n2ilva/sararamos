@@ -34,16 +34,36 @@
     <form action="#" method="post">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome" required class="input"><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required class="input"><br><br>
-        
+                
         <label for="mensagem">Mensagem:</label><br>
         <textarea id="mensagem" name="mensagem" rows="4" cols="50" required class="input"></textarea><br><br>
         <div class="botoes">
         <input type="submit" value="Enviar">
         <input type="reset" value="Apagar">
         </div>
+        <script>
+            const nomeInput = document.getElementById('nome');
+            nomeInput.addEventListener('input', function() {
+                this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '');
+            });
+            const mensagemInput = document.getElementById('mensagem');
+            mensagemInput.addEventListener('input', function() {
+                this.value = this.value.replace(/[^a-zA-ZÀ-ÿ0-9\s.,!?]/g, '');
+            });
+            const msgformatada = mensagemInput.value.trim().replace(/\s+/g, ' ');
+            console.log('Mensagem formatada:', msgformatada);
+            const texto = 'Olá, meu nome é ' + nomeInput.value + '. ' + msgformatada;
+            console.log('Texto completo:', texto);
+            const Telefone = '(62) 9 8555-3124';
+            console.log('Telefone para contato:', Telefone);
+            const urlWhatsApp = 'https://api.whatsapp.com/send?phone=5562985553124&text=' + encodeURIComponent(texto);
+            console.log('URL do WhatsApp:', urlWhatsApp);
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                this.reset();
+            });
+        </script>
     </form>
     </section>
 </main>
