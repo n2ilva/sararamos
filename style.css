@@ -126,7 +126,7 @@ body {
 
 .conteudo_imagens {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -137,6 +137,9 @@ body {
 .conteudo_imagens p {
     text-align: center;
     padding: 10px;
+    font-size: 18px;
+    color: #df003b;
+    max-width: 800px;
 }
 
 .conteudo_imagens .imagem {
@@ -285,6 +288,7 @@ body {
 .rodape_conteudo {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
