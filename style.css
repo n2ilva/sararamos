@@ -260,12 +260,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.conteudo_contato .botoes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.conteudo_contato .botoes input[type="submit"], .conteudo_contato .botoes input[type="reset"] {
+.botao {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -273,12 +268,11 @@ body {
     color: white;
     cursor: pointer;
 }
-.conteudo_contato .botoes input[type="submit"]:hover, .conteudo_contato .botoes input[type="reset"]:hover {
-    background: goldenrod;
+.botao:hover {
+    background: #0CE84D;
     color: white;
     transition: 0.3s;
 }
-
 .rodape {
     display: flex;
     justify-content: space-around;
