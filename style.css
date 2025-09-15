@@ -99,12 +99,19 @@ body {
     transform: scale(1.05);
     transition: 0.3s;
 }
+.imagem_inicio p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
 .rodape {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: #DF6283;
     color: white;
+    padding: 10px 20px;
 }
 .rodape_conteudo {
     display: flex;
@@ -114,7 +121,6 @@ body {
     width: 100%;
 }
 .inscricao {
-    padding: 20px;
     text-align: center;
 }
 .inscricao input[type="email"] {
@@ -136,9 +142,4 @@ body {
     background: goldenrod;
     color: white;
     transition: 0.3s;
-}
-.redes-sociais a{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }

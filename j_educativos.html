@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+    <header>
         <section class="menu">
-            <h1 class="menu_titulo">Página Inicial</h1>
+            <div class="titulo"><h1>Página Inicial</h1></div>
+            <div class="navegacao">
             <nav>
                 <ul>
-                    <li><a href="index.html" class="menu_link">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li class="dropdown">Atividades
                         <div class="dropdown-content">
                             <a href="d_colorir.html">Desenhos para Colorir</a>
@@ -24,8 +25,9 @@
                     <li><a href="Contato.html">Contato</a></li>
                 </ul>
             </nav>
+            </div>
         </section>
-</header>
+    </header>
 <main>
     <section class="jogos_edu">
     <p>Aqui você encontra uma seleção de jogos educativos para crianças de todas as idades. Estes jogos são projetados para tornar o aprendizado divertido e interativo, ajudando as crianças a desenvolver habilidades importantes enquanto se divertem.</p>
@@ -39,18 +41,23 @@
     <p class="texto">Explore nossa coleção de jogos educativos e encontre o jogo perfeito para ajudar no desenvolvimento do seu filho!</p>
     </section>
 </main>
-<footer>
-    <section class="rodape">
-        <p>Todos os direitos reservados.</p>   
-        <div class="rodape_div">
-            <a href="https://www.facebook.com/sara.ramos.351" target="_blank" width="32px">
-                <img src="Imagens/facebook32px.png" alt="Facebook" class="rodape" height="32px" width="32px">
-            </a>
-            <a href="https://www.instagram.com/s4rar4m0s/" target="_blank" width="32px">
-                <img src="Imagens/instagram32px.png" alt="Instagram" class="rodape" height="32px" width="32px">
-            </a>
-        </div>
-    </section> 
-</footer>
+    <footer class="rodape">
+        <section class="rodape_conteudo">
+            <div class="inscricao">
+                <form action="">
+                    <label for="email">Inscreva-se para receber novidades:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+            <div class="contato">
+                <h3>Contato:</h3>
+                <p>Nome: Sara Souza Ramos Silva</p>
+                <p>E-mail: sararamos.souza@gmail.com</p>
+                <p>Telefone: (62) 9 8555-3124</p>
+                <p>Senador Canedo - GO</p>                
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
