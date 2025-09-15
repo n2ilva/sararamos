@@ -35,6 +35,7 @@ body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 .dropdown {
     position: relative;
