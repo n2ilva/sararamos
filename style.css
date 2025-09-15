@@ -1,42 +1,51 @@
-* { box-sizing: border-box; 
-  font-family: Arial, sans-serif; 
-  margin: 0; 
-  padding: 0; 
-  scroll-behavior: smooth;}
-body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
+* { 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+body { 
+    background-color: #f4f4f4; color: #333; line-height: 1.6;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
 .menu {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: #DF6283;
     padding: 10px 20px;
 }
-.menu a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    
+.menu .titulo {
+    color: white;
+    align-items: center;
 }
-.menu a:hover {
-    background: #4ED7FF;
-    color: black;
-    transition: 0.3s;
-}
-.menu h1 {
-    margin: 0;
-    color: #ffffff;
-    font-size: 24px;
-}
-.menu ul {
-    list-style: none;
+.menu .navegacao ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    color: white;
     gap: 20px;
+    list-style: none;
+    color: white;
+    
+}
+.menu .navegacao ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+.menu .navegacao ul li a:hover {
+    background: #4ED7FF;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 .dropdown {
     position: relative;
@@ -61,28 +70,34 @@ body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
     border-radius: 5px;
     transition: 0.3s;
 }
-.corpo {
+.conteudo_main {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100vh;
 }
-.corpo_titulo {
-    color: #DF6283;
-    margin-bottom: 10px;
-    font-size: 24px;
-    border-bottom: 2px solid #DF6283;
-    padding-bottom: 20px;
-
+.apresentacao {
+    padding: 20px;
+    text-align: center;
 }
-.corpo_p {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: fit-content;
-    color: #555;
+.imagem_inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.imagem_inicio img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.imagem_inicio img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 .rodape {
     display: flex;
@@ -90,55 +105,40 @@ body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
     align-items: center;
     background: #DF6283;
     color: white;
-    padding: auto;
 }
-.rodape_div {
+.rodape_conteudo {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+.inscricao {
+    padding: 20px;
+    text-align: center;
+}
+.inscricao input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.inscricao button {
     padding: 10px 20px;
-    gap: 10px;
-}
-.conteudo_img {
-    display: flex;
-    justify-content: column;
-    padding: 20px;
-    background: white;
-    margin: 20px;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100vh;
+    background: #4ED7FF;
+    color: white;
+    cursor: pointer;
 }
-.jogos_edu{
-    display: flex;
-    justify-items: center;
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100vh;
-
+.inscricao button:hover {
+    background: goldenrod;
+    color: white;
+    transition: 0.3s;
 }
-.conteudo_vid {
+.redes-sociais a{
     display: flex;
-    justify-items: center;
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100vh;
-    gap: 10px;
-}
-.conteudo_contato {
-    display: flex;
-    justify-items: center;
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 100vh;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
 }

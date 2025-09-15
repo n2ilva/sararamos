@@ -12,10 +12,11 @@
 <body>
     <header>
         <section class="menu">
-            <h1 class="menu_titulo">Página Inicial</h1>
+            <div class="titulo"><h1>Página Inicial</h1></div>
+            <div class="navegacao">
             <nav>
                 <ul>
-                    <li><a href="index.html" class="menu_link">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li class="dropdown">Atividades
                         <div class="dropdown-content">
                             <a href="d_colorir.html">Desenhos para Colorir</a>
@@ -26,23 +27,48 @@
                     <li><a href="Contato.html">Contato</a></li>
                 </ul>
             </nav>
+            </div>
         </section>
     </header>
-    <main>
-        <section class="corpo">
-            <h2 class="corpo_titulo">Bem Vindo a nossa Página.</h2>
-            <p class="corpo_p">Aqui voçê vai <strong>encontrar conteúdos variados</strong> para sua
-                <strong>Aula</strong>.</p>
-            <p class="corpo_p">Temos <strong>Atividades</strong>, <strong>Histórias Infantis</strong>,
+    <main class="conteudo_main">
+        <section class="apresentacao">
+            <h2>Bem Vindo a nossa Página.</h2>
+            <p>Aqui voçê vai <strong>encontrar conteúdos variados</strong> para sua
+                <strong>Aula</strong>.
+            </p>
+            <p>Temos <strong>Atividades</strong>, <strong>Histórias Infantis</strong>,
                 <strong>Desenhos para Colorir</strong>, <strong>Vídeos Educativos</strong> e <strong>Jogos
-                    Educativos</strong>.</p>
-            <p class="corpo_p">Navegue por nosso site e aproveite todo o conteúdo que preparamos para você!</p>
+                    Educativos</strong>.
+            </p>
+            <p>Navegue por nosso site e aproveite todo o conteúdo que preparamos para você!</p>
+        </section>
+        <section class="imagem_inicio">
+            <div>
+                <img src="Imagens/criancasatividade.png" alt="Crianças" class="criancas">
+            </div>
+            <div>
+                <img src="Imagens/criancasbrincando.png" alt="Livros" class="livros">
+            </div>
+            <div>
+                <img src="Imagens/criancaslendo.png" alt="Educação" class="educacao">
+            </div>
         </section>
     </main>
-    <footer>
-        <section class="rodape">
-            <p>Todos os direitos reservados.</p>
-            <div class="rodape_div">
+    <footer class="rodape">
+        <section class="rodape_conteudo">
+            <div class="inscricao">
+                <form action="">
+                    <label for="email">Inscreva-se para receber novidades:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+            <div class="contato">
+                <p>E-mail: sararamos.souza@gmail.com</p>
+                <p>Telefone: (62) 9 8555-3124</p>
+                <p>Senador Canedo - GO</p>                
+            </div>
+            <div class="redes_sociais">
                 <a href="https://www.facebook.com/sara.ramos.351" target="_blank" width="32px">
                     <img src="Imagens/facebook32px.png" alt="Facebook" class="rodape" height="32px" width="32px">
                 </a>
