@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <meta name="description" content="Entre em contato com Sara Ramos para dúvidas, sugestões ou parcerias. Formulário direto para WhatsApp.">
+    <title>Contato | Sara Ramos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +14,7 @@
     <header>
         <section class="menu">
             <div class="titulo">
-                <h1>Contato</h1>
+                <span class="h1-fake">Contato</span>
             </div>
             <div class="navegacao">
                 <nav>
@@ -34,24 +35,15 @@
     </header>
     <main>
         <section class="conteudo_contato">
-            <p>Entre em contato conosco através do formulário abaixo:</p>
+            <h1>Entre em contato conosco</h1>
+            <p>Preencha o formulário abaixo para falar conosco:</p>
             <form action="#" method="post">
                 <label for="nome">Nome:</label><br>
                 <input type="text" id="nome" name="nome" required class="input" placeholder="Digite seu nome"><br><br>
 
                 <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required class="input" placeholder="Digite sua mensagem"></textarea><br><br>
-                <script>
-                    function enviarWhatsApp() {
-                        var nome = document.getElementById('nome').value;
-                        var mensagem = document.getElementById('mensagem').value;
-                        var numero = '5562985553124';
-
-                        var texto = encodeURIComponent('Olá, Meu nome é ' + nome + ', ' + mensagem);
-                        var url = 'https://wa.me/' + numero + '?text=' + texto;
-                        window.open(url, '_blank');
-                    }
-                </script>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required class="input" placeholder="Digite sua mensagem" aria-label="Mensagem"></textarea><br><br>
+                <button class="botao" type="button" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
                 <button class="botao" type="button" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
             </form>
         </section>
