@@ -22,6 +22,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Estilos do menu */
 .menu {
     display: flex;
     justify-content: space-around;
@@ -90,6 +91,9 @@ body {
     display: block;
     text-align: left;
 }
+/* FIM Estilos do menu */
+
+/* Estilo Conteúdo Inicial */
 .conteudo_main {
     display: flex;
     flex-direction: column;
@@ -145,6 +149,185 @@ body {
     font-weight: 300;
     font-size: 16px;
 }
+/* FIM Estilo Conteúdo Inicial */
+
+/* Estilos de Desenhos para colorir */
+.imagens_colorir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+.imagens_colorir h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--rosa);
+    font-size: 28px;
+}
+.imagens_colorir p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cinza);
+    font-size: 18px;
+    font-weight: 300;
+}
+.imagens_colorir iframe {
+    width: 1200px;
+    height: 800px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* FIM Estilos de Desenhos para colorir */
+
+/* Estilos de Jogos Educativos */
+.jogos_educativos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+.jogos_educativos h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--rosa);
+    font-size: 28px;
+}
+.jogos_educativos p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cinza);
+    font-size: 18px;
+    font-weight: 300;
+}
+.jogos_educativos iframe {
+    width: 1200px;
+    height: 800px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* FIM Estilos de Jogos Educativos */
+
+/* Estilos de Vídeos Educativos */
+.videos_educativos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+.videos_educativos h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--rosa);
+    font-size: 28px;
+}
+.videos_educativos p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cinza);
+    font-size: 18px;
+    font-weight: 300;
+}
+.videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.videos iframe {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* FIM Estilos de Vídeos Educativos */
+
+/*Estilo Contato*/
+.conteudo_contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+.conteudo_contato h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--rosa);
+    font-size: 28px;
+}
+.conteudo_contato p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cinza);
+    font-size: 18px;
+    font-weight: 300;
+}
+.contato_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid var(--rosa);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--amarelo);
+}
+.contato_label label {
+    color: var(--cinza);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contato_label .input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--rosa);
+    border-radius: 5px;
+}
+.contato_label .input:focus {
+    border-color: var(--azul);
+    outline: none;
+}
+.contato_label .botao {
+    background-color: var(--rosa);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+.contato_label .botao:hover {
+    background-color: var(--verde);
+    color: var(--rosa);
+}
+
+/* FIM Estilo Contato*/
+
+/* Estilos do rodapé */
 .rodape {
     display: flex;
     justify-content: center;
@@ -159,6 +342,7 @@ body {
     margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .contato h3{
     color: var(--branco);
@@ -192,3 +376,4 @@ body {
     background-color: var(--azul);
     color: var(--branco);
 }
+/* FIM Estilos do rodapé */
