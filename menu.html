@@ -1,26 +1,16 @@
-<!-- menu.html: Menu de navegação reutilizável -->
 <nav class="menu">
     <div class="titulo"><h1>Página Inicial</h1></div>
     <div class="navegacao">
         <ul>
             <li><a href="index.html">Início</a></li>
             <li class="dropdown">Atividades
-                <div class="dropdown-content">
-                    <a href="d_colorir.html">Desenhos para Colorir</a>
-                    <a href="j_educativos.html">Jogos Educativos</a>
-                    <a href="v_educativos.html">Vídeos Educativos</a>
-                </div>
+                <ul class="dropdown-content">
+                    <li><a href="d_colorir.html">Desenhos para Colorir</a></li>
+                    <li><a href="j_educativos.html">Jogos Educativos</a></li>
+                    <li><a href="v_educativos.html">Vídeos Educativos</a></li>
+                </ul>
             </li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </div>
 </nav>
-<!-- Para incluir este menu em todas as páginas HTML, adicione o seguinte script antes do </body> -->
-<script>
-  fetch('menu.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('menu-container').innerHTML = data;
-    });
-</script>
-<!-- E adicione <div id="menu-container"></div> onde o menu deve aparecer -->

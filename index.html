@@ -12,24 +12,7 @@
 
 <body>
     <header>
-        <section class="menu">
-            <div class="titulo"><span class="h1-fake">Página Inicial</span></div>
-            <div class="navegacao">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li class="dropdown">Atividades
-                        <div class="dropdown-content">
-                            <a href="d_colorir.html">Desenhos para Colorir</a>
-                            <a href="j_educativos.html">Jogos Educativos</a>
-                            <a href="v_educativos.html">Vídeos Educativos</a>
-                        </div>
-                    </li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-            </div>
-        </section>
+        <div id="menu-container"></div>
     </header>
     <main class="conteudo_main">
         <section class="apresentacao">
@@ -45,15 +28,15 @@
         </section>
         <section class="imagem_inicio">
             <div>
-                <a href="d_colorir.html"><img src="Imagens/criancasatividade.png" alt="Crianças realizando atividades educativas" class="criancas"></a>
+                <a href="d_colorir.html"><img height="300" src="Imagens/criancasatividade.png" alt="Crianças realizando atividades educativas" class="criancas"></a>
                 <p>Atividades de leitura, escrita e matemática.</p>
             </div>
             <div>
-                <a href="j_educativos.html"><img src="Imagens/criancasbrincando.png" alt="Crianças brincando com jogos educativos" class="livros"></a>
+                <a href="j_educativos.html"><img height="300" src="Imagens/criancasbrincando.png" alt="Crianças brincando com jogos educativos" class="livros"></a>
                 <p>Jogos educativos para aprender brincando.</p>
             </div>
             <div>
-                <a href="v_educativos.html"><img src="Imagens/criancaslendo.png" alt="Crianças lendo livros educativos" class="educacao"></a>
+                <a href="v_educativos.html"><img height="300" src="Imagens/criancaslendo.png" alt="Crianças lendo livros educativos" class="educacao"></a>
                 <p>Atividades de leitura para crianças.</p>
             </div>
         </section>
@@ -64,7 +47,7 @@
                 <form action="">
                     <label for="email">Inscreva-se para receber novidades:</label>
                     <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                    <button type="submit">Inscrever</button>
+                    <button type="submit" class="submit-button">Inscrever</button>
                 </form>
             </div>
             <div class="contato">
@@ -76,6 +59,13 @@
             </div>
         </section>
     </footer>
+    <script>
+            fetch('menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+    </script>
 </body>
 
 
