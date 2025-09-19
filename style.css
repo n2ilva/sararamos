@@ -176,8 +176,9 @@ body {
     font-weight: 300;
 }
 .imagens_colorir iframe {
-    width: 1200px;
-    height: 800px;
+    width: 80vw;
+    height: 60vh;
+    max-width: 1200px;
     border-radius: 10px;
     transition: transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -209,8 +210,9 @@ body {
     font-weight: 300;
 }
 .jogos_educativos iframe {
-    width: 1200px;
-    height: 800px;
+    width: 80vw;
+    height: 60vh;
+    max-width: 1200px;
     border-radius: 10px;
     transition: transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
