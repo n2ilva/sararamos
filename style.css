@@ -269,7 +269,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     margin-top: 50px;
@@ -293,22 +292,20 @@ body {
     align-items: center;
     flex-direction: column;
     border: 3px solid var(--rosa);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
     background-color: var(--amarelo);
 }
 .contato_label label {
-    color: var(--cinza);
+    color: black;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 .contato_label .input {
     width: 100%;
     max-width: 500px;
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid var(--rosa);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .contato_label .input:focus {
     border-color: var(--azul);
@@ -326,7 +323,7 @@ body {
 }
 .contato_label .botao:hover {
     background-color: var(--verde);
-    color: var(--rosa);
+    color: black;
 }
 
 /* FIM Estilo Contato*/
@@ -380,11 +377,3 @@ body {
     color: var(--branco);
 }
 /* FIM Estilos do rodapé */
-
-/* Suporte para modo escuro */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --branco: #000000;
-        --cinza: #e0e0e0;
-    }
-}
