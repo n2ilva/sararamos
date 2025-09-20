@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com Sara Ramos para dúvidas, sugestões ou parcerias. Formulário direto para WhatsApp.">
+    <meta name="description"
+        content="Entre em contato com Sara Ramos para dúvidas, sugestões ou parcerias. Formulário direto para WhatsApp.">
     <title>Contato | Sara Ramos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -23,23 +24,32 @@
                 <input type="text" id="nome" name="nome" required class="input" placeholder="Digite seu nome"><br><br>
 
                 <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required class="input" placeholder="Digite sua mensagem" aria-label="Mensagem"></textarea><br><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required class="input"
+                    placeholder="Digite sua mensagem" aria-label="Mensagem"></textarea><br><br>
                 <button class="botao" type="button" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
             </form>
         </section>
     </main>
     <div id="footer-container"></div>
     <script>
-            fetch('menu.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('menu-container').innerHTML = data;
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
             });
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-container').innerHTML = data;
-                });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+        function enviarWhatsApp() {
+            var nome = document.getElementById('nome').value;
+            var mensagem = document.getElementById('mensagem').value;
+            var numero = '5562985553124';
+            var texto = encodeURIComponent('Olá, Meu nome é ' + nome + ', ' + mensagem);
+            var url = 'https://wa.me/' + numero + '?text=' + texto;
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 
